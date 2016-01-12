@@ -1,3 +1,9 @@
-canvas {
-	border:1px solid #000,
+html { 
+	box-sizing: border-box;
+
+}
+
+#canvas {
+	background: tan;
+	border:5px solid #000,
 }
