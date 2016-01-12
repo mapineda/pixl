@@ -6,8 +6,8 @@
 //define variables
 var canvas = document.getElementById('canvas'),
 	ctx = canvas.getContext('2d'),
-	width = 850,
-	height = 350,
+	width = 500,
+	height = 250,
 	player = {
 		x: width/2,
 		y: height - 5,
@@ -21,6 +21,28 @@ var canvas = document.getElementById('canvas'),
 	keys = [],
     friction = 0.8,
     gravity = 0.2;
+
+var boxes = [];
+
+//box dimensions
+boxes.push({
+	x: 0,
+	y: 0,
+	width 10,
+	height: height
+});
+boxes.push({
+    x: 0,
+    y: height - 2,
+    width: width,
+    height: 50
+});
+boxes.push({
+    x: width - 10,
+    y: 0,
+    width: 50,
+    height: height
+});
 
 canvas.width = width;
 canvas.height = height;
